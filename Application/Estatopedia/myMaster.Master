@@ -1,0 +1,92 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="myMaster.master.cs" Inherits="Estatopedia.myMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>ESTATEOPEDIA</title>
+    
+    <!--LINKS-->
+    <link rel="shortcut icon" href="favicon.ico">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,300' rel='stylesheet' type='text/css'>
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="mycss/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="mycss/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="mycss/bootstrap.css">
+	<!-- Superfish -->
+	<link rel="stylesheet" href="mycss/superfish.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="mycss/flexslider.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="mycss/magnific-popup.css">
+	<!-- Date Picker -->
+	<link rel="stylesheet" href="mycss/bootstrap-datepicker.min.css">
+	<!-- CS Select -->
+	<link rel="stylesheet" href="mycss/cs-select.css">
+	<link rel="stylesheet" href="mycss/cs-skin-border.css">
+	<link rel="stylesheet" href="style.css">
+
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div id="fh5co-wrapper"></div>
+		<div id="fh5co-page"></div>
+
+		<header id="fh5co-header-section" class="sticky-banner">
+			<div class="container">
+				<div class="nav-header">
+					
+					<h1 id="fh5co-logo"><a href="#"><img src="images/logo.png" style="width:80px;" />Estate<span>opedia</span></a></h1>
+
+					<!-- START #fh5co-menu-wrap -->
+									<nav id="fh5co-menu-wrap" role="navigation">
+						<ul class="sf-menu" id="fh5co-primary-menu">
+                           
+							<li class="active"><asp:LinkButton ID="LinkButton" runat="server" OnClick="LoadHome">Profile</asp:LinkButton></li>
+							<li class="active"><a href="_Properties.aspx">Listings</a></li>
+							<li class="active"><a href="Agent.aspx">Commision Calculator</a></li>
+							<li class="active"><a href="Contact.aspx">Contact</a></li>
+							<li class="active"><a href="Login.aspx">Log Out</a></li>
+						    <li>
+							&nbsp&nbsp&nbsp&nbsp&nbsp<img src="images/usericon.png" style="width:80px;" /><br />
+					<asp:TextBox ID="username" BorderStyle="None" ReadOnly="true" style="font:bolder; color:black" runat="server"></asp:TextBox>
+				            </li>
+						</ul>
+
+					</nav>
+				</div>
+			</div>
+		</header>
+
+	<div>
+
+        <hr />
+        <div id="page">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <!--Footer></!-->
+        <div id="footer" style="clear:both;">
+            <p>
+                (c) 2022 Estatopedia.com. All rights reserved.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Group Project Members:
+            </p>
+            <center>
+                <p>
+                   Ali Raza (20L-1005)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Zain Ahmad (20L-1011) </p>
+                <p>
+                   Mustafa Nosher (20L-0925)&nbsp;&nbsp; Syed Hassan Haider (20L-1152) </p>
+
+            </center>
+        </div>
+    </div>
+
+    </form>
+</body>
+</html>

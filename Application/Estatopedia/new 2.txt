@@ -1,0 +1,55 @@
+Employee
+	Best_Selling_item
+	Discount_Policies
+	
+Floor Manager
+	view(1)
+	modified
+	view(2)
+	mark
+Shift Management
+
+Sales Agent
+
+
+Store Manager
+Inventory Manager
+Store Admin
+	Update on Location
+
+Attendence
+
+Store
+
+Customer
+	Login
+	Signup
+
+Online Customer	
+
+Card
+	Card Function
+	
+	
+	
+class Employee
+{
+	private:
+		string name
+		int id
+		float salary
+		string designation
+	public:
+		Employee()
+		{
+			name='\0';
+			id=0;
+			salary=0;
+			designation='\0';
+		}
+		virtual void getname()= 0;
+		virtual void getid()= 0;
+		virtual void getsalary()= 0;
+		virtual void get_designation()= 0;
+		~Employee();
+};
